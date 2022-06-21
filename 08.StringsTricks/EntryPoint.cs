@@ -1,15 +1,28 @@
 ﻿
+using System;
+
 class EntryPoint
 {
     static void Main()
     {
-        string fruitJuice = "Strawberry Juice";
-        System.Console.WriteLine(fruitJuice.Contains("berry"));
-        System.Console.WriteLine(fruitJuice.IndexOf("berry"));
-        System.Console.WriteLine(fruitJuice.LastIndexOf("berry"));
-        fruitJuice = fruitJuice.ToLower();
-        System.Console.WriteLine(fruitJuice);
-        System.Console.ReadLine();
+        string separator = new string('=', 40);
+        string fruitJuice = "Strawberry juice";
+        // straw
+        Console.WriteLine(separator);
+        Console.WriteLine(fruitJuice.Contains("berry"));
+        Console.WriteLine(separator);
+        Console.WriteLine(fruitJuice.IndexOf("berry"));
+        Console.WriteLine(separator);
+        Console.WriteLine(fruitJuice.LastIndexOf("berry"));
+
+        bool containsStraw = fruitJuice.ToUpper().Contains("STRAW");
+
+        Console.WriteLine(separator);
+        Console.WriteLine(fruitJuice.ToUpper());
+        Console.WriteLine(separator);
+        Console.WriteLine(containsStraw);
+
+        Console.ReadKey();
     }
 }
 
