@@ -7,6 +7,9 @@ class EntryPoint
         System.Console.WriteLine(fruitJuice.Contains("berry"));
         System.Console.WriteLine(fruitJuice.IndexOf("berry"));
         System.Console.WriteLine(fruitJuice.LastIndexOf("berry"));
+        System.Console.WriteLine(fruitJuice.LastIndexOf("berry"));
+        System.Console.WriteLine(fruitJuice.LastIndexOf("berry"));
+        System.Console.WriteLine(fruitJuice.LastIndexOf("berry"));
         fruitJuice = fruitJuice.ToLower();
         System.Console.WriteLine(fruitJuice);
         System.Console.ReadLine();
